@@ -8,7 +8,8 @@ import gif2 from "/leyendasdelsol/gif2.gif";
 
 export default function Leyendas() {
   return (
-    <div className="overflow-x-hidden pb-0 overflow-hidden text-justify leading-none">
+    <div className="overflow-x-hidden pb-0 overflow-hidden text-justify leading-none w-fit"
+      style={{ viewTransitionName: "project-title" }}>
       <DetailNav />
 
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">

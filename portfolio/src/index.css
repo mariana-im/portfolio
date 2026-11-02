@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* Simple fade between pages when opening a project.
+   Paste this into index.css, replacing the circle-reveal rules
+   (the ::view-transition-old/new(root) blocks and the vt-reveal /
+   vt-old-out keyframes). */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 450ms;
+  animation-timing-function: ease-in-out;
+}

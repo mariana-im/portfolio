@@ -11,7 +11,8 @@ export default function MotionLab() {
       <DetailNav />
 
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">
-        <div className="flex flex-col sm:flex sm:flex-row sm:items-center sm:justify-between py-8 pt-10">
+        <div className="flex flex-col sm:flex sm:flex-row sm:items-center sm:justify-between py-8 pt-10 w-fit"
+          style={{ viewTransitionName: "project-title" }}>
           <div className="flex flex-col justify-between pb-2">
             <div className="sinoreta text-left text-5xl lg:text-7xl">
               Motion Lab

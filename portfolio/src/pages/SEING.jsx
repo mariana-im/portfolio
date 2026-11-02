@@ -13,7 +13,8 @@ export default function SEING() {
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">
         <div className="py-8 pt-10 lg:px-85">
           <div className="justify-between pb-2">
-            <div className="text-left sinoreta pb-1 text-5xl font-bold lg:text-5xl">
+            <div className="text-left sinoreta pb-1 text-5xl lg:text-5xl w-fit"
+              style={{ viewTransitionName: "project-title" }}>
               SEING Website
             </div>
             {/* TODO: confirm subtitle — not sure what SEING stands for or represents beyond "engineering society" */}

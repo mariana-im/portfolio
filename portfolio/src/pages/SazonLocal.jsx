@@ -7,36 +7,41 @@ import image3 from "/sazonlocal/image3.png";
 
 export default function SazonLocal() {
   return (
-    <div className="overflow-x-hidden pb-0 overflow-hidden leading-none text-justify">
+    <div className="overflow-x-hidden pb-0 overflow-hidden hyphens-auto leading-relaxed text-lg lg:text-xl text-justify">
       <DetailNav />
 
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">
         <div className="py-8 pt-10 lg:px-85">
           <div className="justify-between pb-2">
-            <div className="text-left sinoreta pb-1 text-5xl font-bold lg:text-5xl">
+            <div
+              className="text-left hyphens-none sinoreta pb-1 text-4xl md:text-5xl lg:text-[3rem] font-bold leading-tight w-fit"
+              style={{ viewTransitionName: "project-title" }}
+            >
               Sazón Local
             </div>
-            <div className="text-xl pb-2">Mobile Cooking App</div>
+            <div className="text-lg lg:text-xl pb-2">Mobile Cooking App</div>
           </div>
-          <div className="">
+          <div className="text-sm lg:text-base">
             <div>
-              <b>Role:</b> UI/UX Designer.
+              Role: UI/UX Designer.
             </div>
             <div>
-              <b>Skills:</b> UI/UX Design, Mobile-First Design, User Flows,
+              Skills: UI/UX Design, Mobile-First Design, User Flows,
               Wireframing, Prototyping, Interaction Design, Visual Hierarchy,
               Figma.
             </div>
             <div>
-              <b>Timeline:</b> Fall 2024.
+              Timeline: Fall 2024.
             </div>
           </div>
         </div>
-        <hr />
+        <div className="lg:px-85">
+          <hr />
+        </div>
 
-        <div className="pt-8 gap-40 lg:px-85">
+        <div className="pt-8 gap-40 lg:px-85 text-[1.1rem]">
           <div className="">
-            <div className="font-bold pb-1">Overview</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Overview</div>
             <div className="pb-0">
               Sazón Local is a mobile app prototype that connects users with
               recipes based on products available at a local grocery store.
@@ -47,7 +52,7 @@ export default function SazonLocal() {
               <img className="w-180 my-6" src={image2} alt="Two screens and several components used in the app, a home screen showing sales and types of recipes and a configuration sidebar" />
             </div>
 
-            <div className="font-bold pb-1">Problem</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Problem</div>
             <div className="pb-6">
               Many users want to cook at home but struggle to find recipe
               inspiration that aligns with locally available ingredients. The
@@ -56,7 +61,7 @@ export default function SazonLocal() {
               and integrate into everyday cooking.
             </div>
 
-            <div className="font-bold pb-1">Solution</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Solution</div>
             <div className="pb-6">
               I designed the full mobile experience from user flows through
               high-fidelity prototypes in Figma, starting with how a user
@@ -67,22 +72,22 @@ export default function SazonLocal() {
               together.
             </div>
 
-                <div className="pb-6">
-                  This prototype demonstrates how thoughtful interface
-                  and experience design can translate local commerce into a{" "}
-                  digital experience that feels intuitive and easy to
-                  use.
-                </div>
-              <div className="">
-                <img
-                  className="pb-6"
-                  loading="lazy"
-                  src={image1}
-                  alt="TWO screens from the app showing a log in page and a home page showing a call to action to log in"
-                />
-              </div>
+            <div className="pb-6">
+              This prototype demonstrates how thoughtful interface
+              and experience design can translate local commerce into a{" "}
+              digital experience that feels intuitive and easy to
+              use.
+            </div>
+            <div className="">
+              <img
+                className="pb-6"
+                loading="lazy"
+                src={image1}
+                alt="TWO screens from the app showing a log in page and a home page showing a call to action to log in"
+              />
+            </div>
 
-            <div className="font-bold pb-1">Outcome</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Outcome</div>
             <div className="pb-6">
               {/* TODO: fill in with a concrete result if you have one — course
               grade/feedback, usability testing results, whether it moved
@@ -94,7 +99,7 @@ export default function SazonLocal() {
               interaction-level detail.
             </div>
 
-                        <div className="flex justify-center">
+            <div className="flex justify-center">
               <img
                 className="pb-6"
                 loading="lazy"
@@ -103,7 +108,7 @@ export default function SazonLocal() {
               />
             </div>
 
-            <div className="font-bold pb-1">Reflections</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Reflections</div>
             <div className="pb-6">
               Working on Sazón Local helped me better understand how design
               decisions impact usability at every step of the user journey.
@@ -112,8 +117,8 @@ export default function SazonLocal() {
               experiences.
             </div>
 
-                      <iframe
-                      title="Figma prototype of the mobile cooking app"
+            <iframe
+              title="Figma prototype of the mobile cooking app"
               className="w-full aspect-video rounded-[.6rem] pb-6"
               src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/gBprkfEOgDbR3IiQNV4aq6/Untitled?node-id=0-1&t=oNo7kKqdIEVDTzk1-1"
               allowFullScreen
@@ -122,6 +127,9 @@ export default function SazonLocal() {
           </div>
         </div>
 
+        <div className="lg:px-85">
+          <hr />
+        </div>
         <DetailFooter />
       </div>
     </div>

@@ -6,38 +6,43 @@ import video1 from "/visualize/video1.mp4";
 
 export default function Visualize() {
   return (
-    <div className="overflow-x-hidden pb-0 overflow-hidden text-justify leading-none">
+    <div className="overflow-x-hidden pb-0 overflow-hidden text-justify hyphens-auto leading-relaxed text-lg lg:text-xl">
       <DetailNav />
 
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">
         <div className="py-8 pt-10 lg:px-85">
           <div className="justify-between pb-2">
-            <div className="text-left sinoreta pb-1 text-5xl font-bold lg:text-5xl">
+            <div
+              className="text-left hyphens-none sinoreta pb-1 text-4xl md:text-5xl lg:text-[3rem] font-bold leading-tight w-fit"
+              style={{ viewTransitionName: "project-title" }}
+            >
               Visualize
             </div>
-            <div className="text-xl pb-2">Cross-Platform Mobile Development</div>
+            <div className="text-lg lg:text-xl pb-2">Cross-Platform Mobile Development</div>
           </div>
-          <div className="">
+          <div className="text-sm lg:text-base">
             <div>
-              <b>Role:</b> Mobile Developer (Cross-Platform).
+              Role: Mobile Developer (Cross-Platform).
             </div>
             <div>
-              <b>Skills:</b> SwiftUI, Kotlin, Figma, UI Design, Cross-Platform
+              Skills: SwiftUI, Kotlin, Figma, UI Design, Cross-Platform
               Development.
             </div>
             <div>
-              <b>Timeline:</b> Spring 2026.
+              Timeline: Spring 2026.
             </div>
           </div>
         </div>
-        <hr />
+        <div className="lg:px-85">
+          <hr />
+        </div>
 
-        <div className="pt-8 gap-40 lg:px-85">
+        <div className="pt-8 gap-40 lg:px-85 text-[1.1rem]">
           <div className="">
-            <div className="font-bold pb-1">Overview</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Overview</div>
             <div className="pb-6">
               Visualize is a mobile analytics and collaboration platform,
-              built in partnership with Oracle by a 12-person team, that
+              built for Oracle by a 12-person team, that
               lets teams create, share, and discuss charts as easily as
               posting on a social feed, instead of scattering insights
               across spreadsheets, files, and disconnected tools. I worked
@@ -48,7 +53,7 @@ export default function Visualize() {
               bugs and implementing linting.
             </div>
 
-            <div className="font-bold pb-1">Problem</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Problem</div>
             <div className="pb-6">
               Building the same app twice, once for iOS and once for Android,
               with two separate teams working in two separate codebases,
@@ -69,11 +74,7 @@ export default function Visualize() {
               throughout design, development, testing, and deployment.
             </div>
 
-
-
-
-
-            <div className="font-bold pb-1">Solution</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Solution</div>
             <div className="pb-6">
               Using the Figma prototypes as a single reference point, I built
               features natively rather than relying on a cross-platform
@@ -98,7 +99,7 @@ export default function Visualize() {
               consistent.
             </div>
 
-            <div className="font-bold pb-1">Outcome</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Outcome</div>
             <div className="pb-6">
               The finished platform was presented in a full live demo to
               Oracle, walking through the complete workflow from secure
@@ -111,14 +112,14 @@ export default function Visualize() {
               ecosystems at once.
             </div>
 
-                        <div className="pb-6">
+            <div className="pb-6">
               <video className="w-full rounded-[.6rem]" controls>
                 <source src={video1} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
 
-            <div className="font-bold pb-1">Reflections</div>
+            <div className="font-bold pb-1 text-[1.3rem]">Reflections</div>
             <div className="pb-6">
               Working across two native codebases at the same time taught me
               how much a shared design spec matters before any code gets
@@ -131,23 +132,24 @@ export default function Visualize() {
             </div>
           </div>
 
-          
-            <iframe
-              title="Visualize Figma Android Prototype"
-              className="w-full aspect-video rounded-[.6rem] pb-6"
-              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/F28SgBIbS2KZx5NJwKUMV2/Oracle-Reto---Visualizaci%C3%B3n?node-id=2545-2134&t=ErdSOc1Lf0VDYUlF-1"
-              allowFullScreen
-            />
+          <iframe
+            title="Visualize Figma Android Prototype"
+            className="w-full aspect-video rounded-[.6rem] pb-6"
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/F28SgBIbS2KZx5NJwKUMV2/Oracle-Reto---Visualizaci%C3%B3n?node-id=2545-2134&t=ErdSOc1Lf0VDYUlF-1"
+            allowFullScreen
+          />
 
-            <iframe
-              title="Visualize Figma iOS Prototype"
-              className="w-full aspect-video rounded-[.6rem] pb-6"
-              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/F28SgBIbS2KZx5NJwKUMV2/Oracle-Reto---Visualizaci%C3%B3n?node-id=2025-312&t=ErdSOc1Lf0VDYUlF-1"
-              allowFullScreen
-            />
-
+          <iframe
+            title="Visualize Figma iOS Prototype"
+            className="w-full aspect-video rounded-[.6rem] pb-6"
+            src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/F28SgBIbS2KZx5NJwKUMV2/Oracle-Reto---Visualizaci%C3%B3n?node-id=2025-312&t=ErdSOc1Lf0VDYUlF-1"
+            allowFullScreen
+          />
         </div>
 
+        <div className="lg:px-85">
+          <hr />
+        </div>
         <DetailFooter />
       </div>
     </div>

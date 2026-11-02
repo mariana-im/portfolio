@@ -7,7 +7,9 @@ export default function DetailNav() {
 
   return (
     <div className="sm:justify-start justify-center flex">
-      <div className="flex p-5 gap-3 sm:p-10 pt-6 fixed z-20 sm:gap-6">
+      {/* leading-none: the nav sets its own line height instead of inheriting
+          the page's, so it is the same thickness on every project page. */}
+      <div className="flex p-5 gap-3 sm:p-10 pt-6 fixed z-20 sm:gap-6 leading-none">
         <div className="flex items-stretch text-[1.2rem] sm:text-[1.3rem] border border-[.15rem] rounded-[1.05rem] bg-white">
           <button
             onClick={() => {
@@ -55,7 +57,7 @@ export default function DetailNav() {
           </button>
         </div>
         <div className="hover:bg-black active:scale-90 border-black transition duration-300 ease-in-out hover:text-white text-[1.2rem] sm:text-[1.3rem] border border-[.15rem] rounded-[1.05rem] bg-white items-center justify-center align-center flex px-[.6rem]">
-          <a target="_blank" href="MarianaIslasCV.pdf">
+          <a target="_blank" href="portfolioCV.pdf">
             Resume
           </a>
         </div>

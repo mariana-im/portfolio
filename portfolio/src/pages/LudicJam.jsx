@@ -32,7 +32,8 @@ export default function LudicJam() {
       <div className="flex assistant flex-col pb-0 p-7 pt-20 lg:pb-0 lg:p-25">
         <div className="py-8 pt-10 lg:px-85">
           <div className="justify-between pb-2">
-            <div className="text-left sinoreta pb-1 text-5xl font-bold lg:text-5xl">
+            <div className="text-left sinoreta pb-1 text-5xl lg:text-5xl w-fit"
+              style={{ viewTransitionName: "project-title" }}>
               Ludic Jam
             </div>
             <div className="text-xl pb-2">Videogame Focused Hackathon</div>
@@ -88,25 +89,25 @@ export default function LudicJam() {
             </div>
 
 
-                <div className="pb-6">
-                  While designing the mascots I focused on{" "}
-                  <b>traditional mexican folklore</b> since one of core
-                  premises of the hackathon was to highlight Sonora's
-                  importance.
-                </div>
-              <div className="pb-6 flex justify-center items-center">
-                <img
-                  className="w-[14rem] sm:w-[17rem] lg:w-[22rem] lg:h-[12rem]"
-                  loading="lazy"
-                  src={image3}
-                  alt="Ludic Jam mascot design inspired by Mexican folklore"
-                />
-                <img
-                  className="w-[15rem] sm:w-[18rem] lg:w-[23rem] lg:h-[13rem]"
-                  loading="lazy"
-                  src={image4}
-                  alt="Second Ludic Jam mascot design inspired by Mexican folklore"
-                />
+            <div className="pb-6">
+              While designing the mascots I focused on{" "}
+              <b>traditional mexican folklore</b> since one of core
+              premises of the hackathon was to highlight Sonora's
+              importance.
+            </div>
+            <div className="pb-6 flex justify-center items-center">
+              <img
+                className="w-[14rem] sm:w-[17rem] lg:w-[22rem] lg:h-[12rem]"
+                loading="lazy"
+                src={image3}
+                alt="Ludic Jam mascot design inspired by Mexican folklore"
+              />
+              <img
+                className="w-[15rem] sm:w-[18rem] lg:w-[23rem] lg:h-[13rem]"
+                loading="lazy"
+                src={image4}
+                alt="Second Ludic Jam mascot design inspired by Mexican folklore"
+              />
             </div>
 
             <div className="font-bold">Outcome</div>
